@@ -41,18 +41,7 @@
 								permalink: '<?php echo $p->url(); ?>',
 								subtitle: '<?php echo html($p->subtitle()); ?>',
 								duration: '<?php echo gmdate('H:i:s', $infos->duration); ?>',
-								chapters: <?php echo json_encode($infos->chapters); ?>,
-								downloads: [
-									<?php
-									$first = true;
-									foreach($infos->media as $format => $data) {
-										if(!$first) {
-											echo ',';
-										}
-										$first = false; ?>
-										{'name': '<?php echo $format; ?>', 'dlurl': '<?php echo $data['url']; ?>', 'size': '<?php echo $data['size']; ?>'}
-									<?php } ?>
-								]
+								chapters: <?php echo json_encode($infos->chapters); ?>
 							});
 						</script>
 					</div>
