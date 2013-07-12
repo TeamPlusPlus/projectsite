@@ -9,6 +9,10 @@
 							<a href="<?php echo url('/feed/ogg') ?>">Ogg</a>
 						</span>
 					</span>
+					<span class="thanks nomobile">
+						Danke! :)<br>
+						Viel Spaß!
+					</span>
 					<nav>
 						<a href="http://<?php echo $site->teamurl(); ?>" class="logo"><img src="http://stuff.plusp.lu/Images/Team/logo_mono.png" alt="<?php echo $site->title(); ?>"></a>
 						<ul>
