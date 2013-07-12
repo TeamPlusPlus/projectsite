@@ -1,12 +1,12 @@
 <?php if(!r::is('ajax')): ?>
 				<div class="nav">
 					<span data-icon="r" class="feed">
-						<span>
-							<a href="<?php echo url('/feed') ?>">Alle</a>
-							<a href="<?php echo url('/feed/mp3') ?>">MP3</a>
-							<a href="<?php echo url('/feed/m4a') ?>">M4A</a>
-							<a href="<?php echo url('/feed/opus') ?>">Opus</a>
-							<a href="<?php echo url('/feed/ogg') ?>">Ogg</a>
+						<span class="links">
+							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed">Alle</a>
+							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/mp3">MP3</a>
+							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/m4a">M4A</a>
+							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/opus">Opus</a>
+							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/ogg">Ogg</a>
 						</span>
 					</span>
 					<span class="thanks nomobile">
