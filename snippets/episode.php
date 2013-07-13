@@ -47,7 +47,7 @@
 					</div>
 					
 					<div class="shownotes">
-					<?php echo kirbytext($p->shownotes()); ?>
+					<?php echo Episodes::shownotes(kirbytext($p->shownotes()), $p); ?>
 					</div>
 					
 					<hr>
