@@ -3,6 +3,7 @@
 					<span data-icon="r" class="feed">
 						<span class="links">
 							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed">Alle</a>
+							<a href="podcast://bitlove.org/teamplusplus/<?php echo $site->subdomain() ?>/feed">Bit<br>love</a>
 							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/mp3">MP3</a>
 							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/m4a">M4A</a>
 							<a href="podcast://<?php echo $_SERVER['HTTP_HOST']; ?>/feed/opus">Opus</a>
