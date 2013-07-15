@@ -1,4 +1,4 @@
-				<section class="episode<?php if(isset($onlyimage)) echo " float"; ?>">
+				<section class="episode<?php if(isset($onlyimage)) echo " float"; if(isset($teaser)) echo " teaser"; ?>">
 					<?php if(isset($link) && $link) {
 						$linkTag = "<a href=\"$link\">";
 						$linkCloseTag = "</a>";
