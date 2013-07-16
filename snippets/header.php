@@ -44,8 +44,8 @@
 		<?php echo css('assets/vendor/podlove/podlove-web-player/static/podlove-web-player.css'); ?>
 		
 		<?php echo js('assets/vendor/podlove/podlove-web-player/libs/html5shiv.js'); ?>
-		<?php echo js('assets/js/jquery.vendor.js#1.9.1'); ?>
-		<?php echo js('assets/js/prefixfree.vendor.js#1.0.7'); ?>
+		<?php echo js('assets/base/js/jquery.vendor.js#1.9.1'); ?>
+		<?php echo js('assets/base/js/prefixfree/prefixfree.min.js#1.0.7'); ?>
 		
 		<?php echo js('assets/vendor/podlove/podlove-web-player/static/podlove-web-player.js'); ?>
 		
