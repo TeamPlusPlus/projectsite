@@ -17,7 +17,7 @@
 <?php endif; ?>
 					<?php if(!isset($onlyimage)) { ?>
 					<?php if(!isset($teaser)) { ?><iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($p->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($p, 4))); ?>&amp;description=<?php echo rawurlencode(html($p->text())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;" class="flattrtop"></iframe><?php } ?>
-					<ul class="infos block">
+					<ul class="infos block nomargintop">
 						<li data-icon="d"><?php echo $p->date('d.m.Y H:i'); ?></li>
 						<li data-icon="h"><?php echo $p->team(); ?></li>
 					</ul>
