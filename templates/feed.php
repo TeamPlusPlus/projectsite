@@ -52,7 +52,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
 				<guid><?php echo xml($item->url()) ?></guid>
 				<pubDate><?php echo date('r', $item->date()) ?></pubDate>
 					
-				<description><![CDATA[<?php echo kirbytext($item->text()) . Episodes::shownotes(kirbytext($item->shownotes()), $item) ?>]]></description>
+				<description><![CDATA[<?php echo kirbytext($item->text()) . Episodes::shownotes(kirbytext($item->shownotes()), $item) . kirbytext('[Jetzt diese Folge kommentieren](' . $item->url() . '#disqus_thread)'); ?>]]></description>
 				
 				<itunes:author>Team++</itunes:author>
 				<itunes:explicit>No</itunes:explicit>
