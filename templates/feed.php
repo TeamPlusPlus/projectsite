@@ -85,7 +85,7 @@ header('Content-type: application/rss+xml; charset="utf-8"');
         <?php endforeach; ?>
         
         <?php if(Episodes::infos($item)->psc): ?><atom:link rel="http://podlove.org/simple-chapters" href="<?php echo Episodes::infos($item)->psc['url']; ?>" /><?php endif; ?>
-  			<atom:link rel="payment" href="http://api.flattr.com/submit/auto/?uid=teamplusplus&amp;url=<?php echo rawurlencode($item->url()); ?>&amp;title=<?php echo rawurlencode(html(Episodes::title($item, 4))); ?>&amp;description=<?php echo rawurlencode(html($item->text())) ?>&amp;category=audio&amp;language=de_DE" type="text/html" />
+  			<atom:link rel="payment" href="<?php echo snippet('flattr', array('url' => $item->url(), 'title' => Episodes::title($item, 4), 'description' => $item->text(), 'notag' => true)); ?>" type="text/html" />
 			</item>
 		<?php endforeach ?>
 	</channel>

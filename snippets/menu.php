@@ -53,7 +53,7 @@
 					</p>
 				
 					<div class="donate">
-						<iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($site->url()); ?>&amp;title=<?php echo rawurlencode(html($site->title())); ?>&amp;description=<?php echo rawurlencode(html($site->description())) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;"></iframe>
+						<?php echo snippet('flattr', array('url' => $site->url(), 'title' => $site->title(), 'description' => $site->description())); ?>
 						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 							<input type="hidden" name="cmd" value="_s-xclick">
 							<input type="hidden" name="hosted_button_id" value="C3NZ6UJMANXSW">
