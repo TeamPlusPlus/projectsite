@@ -1,0 +1,1 @@
+<iframe src="http://api.flattr.com/button/view/?uid=teamplusplus&amp;url=<?php echo rawurlencode($url); ?>&amp;title=<?php echo rawurlencode(html($title)); ?>&amp;description=<?php echo rawurlencode(html($description)) ?>&amp;category=audio&amp;language=de_DE" style="width:55px; height:62px;"<?php if($top): ?> class="flattrtop"<?php endif; ?>></iframe>
