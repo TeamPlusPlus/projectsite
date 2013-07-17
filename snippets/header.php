@@ -13,7 +13,7 @@
 		<meta property="og:url" content="<?php echo $page->url(); ?>">
 		<?php if(Episodes::infos($page)->image): ?>
 		<meta property="og:image" content="<?php echo Episodes::infos($page)->image['url'] ?>">
-		<meta property="og:image:type" content="image/jpeg">
+		<meta property="og:image:type" content="image/png">
 		<?php else: ?>
 		<meta property="og:image" content="http://stuff.plusp.lu/Images/<?php echo $site->title(); ?>/profile.png">
 		<meta property="og:image:type" content="image/png">
