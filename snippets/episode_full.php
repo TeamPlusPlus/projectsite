@@ -1,7 +1,7 @@
 				<section class="episode">
 					<h2><?php echo Episodes::title($p, 0); ?></h2>
 					
-					<?php echo snippet('episode_image', array('p' => $p)); ?>
+					<?php echo snippet('episode_image', array('p' => $p, 'size' => 400)); ?>
 					<?php echo snippet('flattr', array('url' => $p->url(), 'title' => Episodes::title($p, 4), 'description' => $p->text(), 'top' => true)); ?>
 					<?php echo snippet('episode_meta', array('p' => $p)); ?>
 					
@@ -15,7 +15,7 @@
 						</audio>
 						<script>
 							$('#podloveplayer').podlovewebplayer({
-								poster: '<?php echo Episodes::infos($p)->image['url']; ?>',
+								poster: '<?php echo Episodes::infos($p)->image[250]['url']; ?>',
 								title: '<?php echo Episodes::title($p, 4); ?>',
 								permalink: '<?php echo $p->url(); ?>',
 								subtitle: '<?php echo html($p->subtitle()); ?>',
