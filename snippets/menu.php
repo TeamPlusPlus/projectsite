@@ -15,7 +15,7 @@
 						Viel Spaß!
 					</span>
 					<nav>
-						<a href="http://<?php echo $site->teamurl(); ?>" class="logo"><img src="http://stuff.plusp.lu/Images/Team/logo_mono.png" alt="<?php echo $site->title(); ?>"></a>
+						<a href="http://<?php echo $site->teamurl(); ?>" class="logo"><img src="http://stuff.plusp.lu/Images/Team/logo_notext.png" alt="<?php echo $site->title(); ?>"></a>
 						<ul>
 							<li data-icon="l"><a<?php if(Episodes::newest()->isActive()) { echo ' class="active"'; $active = true; } ?> href="<?php echo Episodes::newest()->url(); ?>">Aktuelle Folge</a></li>
 <?php foreach($pages->visible() as $p): ?>
