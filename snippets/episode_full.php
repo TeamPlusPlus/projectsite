@@ -26,7 +26,7 @@
 					</div>
 					
 					<div class="shownotes">
-					<?php echo Episodes::shownotes(kirbytext($p->shownotes()), $p); ?>
+					<?php echo Episodes::shownotes(str_replace("<br />\n<br />\n<ul>", '<ul>', kirbytext($p->shownotes())), $p); ?>
 					</div>
 					
 					<hr>
